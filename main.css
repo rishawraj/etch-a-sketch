@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#grid-container {
+  background-color: cadetblue;
+  display: flex;
+  width: 800px;
+  height: 800px;
+  cursor: pointer;
+  /* overflow: hidden; */
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 900px;
+}
+.gridSquare {
+  border: 1px solid black;
+  flex-basis: 900px;
+  /* draggable: false; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.black {
+  background-color: rgb(37, 37, 37);
+  /* border: 1px solid rgb(37, 37, 37); */
+  border: 1px solid black;
+  color: white;
+}
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+}
