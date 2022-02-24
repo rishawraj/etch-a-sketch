@@ -33,3 +33,10 @@ function removeBlack() {
     console.log(y);
   });
 }
+function removeBorder() {
+  const boxes = document.querySelectorAll(".gridSquare");
+  const x = boxes.forEach((item) => {
+    item.classList.toggle("borderless");
+    console.log(item.classList);
+  });
+}
